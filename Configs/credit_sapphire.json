@@ -1,0 +1,11 @@
+{
+    "FOLDER_PATH": "Data/Credit/Sapphire",
+    "REMOVE_ROW": 0,
+    "REMOVE_COL": ["Transaction Date", "Type", "Memo"],
+    "HEADER_MAPPING": {
+        "Posted Date": "Date"
+    },
+    "ACCOUNT": "Credit",
+    "BANK": "Chase",
+    "CARD": "Sapphire"
+}
