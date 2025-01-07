@@ -1,0 +1,6 @@
+Year,Month,Date,Description,Category,Amount,Account,Bank,Card
+2024,March,03/07/2024,fee,cash,-8.0,Debit,BofA,Savings
+2024,March,03/14/2024,zelle,cash,83.03,Debit,BofA,Savings
+2024,March,03/26/2024,interest,cash,-30.0,Debit,BofA,Savings
+2024,March,03/27/2024,zelle,cash,67.0,Debit,BofA,Savings
+2024,April,04/01/2024,zelle,cash,100.0,Debit,BofA,Savings

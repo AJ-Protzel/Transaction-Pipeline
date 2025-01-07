@@ -1,0 +1,205 @@
+zelle,zelle
+transfer,transfer
+interest,interest
+fee,fee
+deposit,deposit
+wealthfront,transfer
+franchise tax bd,deposit
+or revenue dept,deposit
+irs treas,deposit
+withdrwl,withdrawal
+counter credit,deposit
+bill payment,transfer
+wire,transfer
+rocket mortgage,rocket mortgage
+cashreward,interest
+all america bank des,transfer
+charge refund,fee
+withdrawal,withdrawal
+robinhood,interest
+costco,costco
+ba electronic payment,transfer
+freetaxusa,free tax usa
+fairyloot,fairyloot
+pg&e,pg&e
+xfinity mobile,xfinity mobile
+comcast cable,xfinity internet
+portland general electric,pge
+el dorado irrigation,eid
+el dorado disposal,el dorado trash
+officemax,officemax
+in-n-out,in n out
+carl's jr,carl's jr.
+gen korean bbq,gen korean bbq
+fred-meyer,fred meyer
+asian food center,asian family market
+steam purchase,steam
+76 - n & s oil,gas
+steamgames,steam
+google *xavier liard,google xavier liard
+safeway,safeway
+amzn mktp,amazon
+calif dmv,california dmv
+comcast,xfinity internet
+usps,usps
+amazon mktpl,amazon
+doordashdashpass,doordash pass
+amazon.com,amazon
+amazon prime,amazon prime
+payment thank you,transfer
+cricut,cricut subscription
+mud bay,mud bay
+chipotle,chipotle
+hmart,hmart
+jack in the box,jack in the box
+automatic payment - thank,transfer
+tjmaxx,tj maxx
+craft warehouse,craft warehouse
+outback,outback
+next level pinball,next level
+amelia,amelia
+mcdonalds,mcdonald's
+retro game trader,retro games
+trader joe,trader joe's
+uwajimaya,uwajimaya
+kizuki ramen,kizuki ramen
+screen door,screen door
+japanese garden,japanese garden
+portland japanese,japanese garden
+fat schlags,tulip farm
+nomad leather,nomad leather
+nectar frozen,nectar froyo
+lowes,lowes
+aftontickets,theater
+mcdonald,mcdonald's
+paxton gate,paxton gate
+papersource,paper source
+pelican brewing,pelican brewing
+the medow,the medow
+the knock back,the knock back
+urbanite,urbanite
+salt&amp;pepper,salt and pepper
+tea inc,tea & tea
+new seasons,new seasons
+bubble n tea,bubble n tea
+pho van,pho van
+osu graduate school,osu store
+fred meyer,fred meyer
+adidas,adidas
+rosa wood fire,maiale rose wood pizza
+love's,gas
+cindys hallmark,hallmark
+century theatres,century theatres
+krispy kreme,krispy kreme
+oswego grill,oswego grill
+cinemark,cinemark theatres
+dollar tree,dollar tree
+handels homemade,handel's homemade
+el campesino,el campesino
+toms pancake,tom's pancake house
+kfc,kfc
+carls jr,carl's jr
+fedex,fedex
+etsy inc,etsy
+din tai fung,din tai fung
+kindle unlt,kindle subscription
+goodwill,goodwill
+panda express,panda express
+etsy,etsy
+oregon symphony,oregon symphony
+barnes,barns & nobel
+mi linda puebla,mi linda puebla
+pip's,pip's doughnuts
+multnomah falls,multnomah falls
+carver cafe,carver cafe
+mediterranean rest,mediterranean rest
+the home depot,home depot
+ross,ross
+batteries plus,batteries plus
+mercari,mercari
+binarybrewing,binary brewing
+honeybaked ham,honeybaked ham
+salt &amp; straw,salt & straw
+red robin,red robin
+ups,ups
+prime taphouse,prime taphouse
+fastrak,fastrak
+andrews flowers,andrew's flowers
+starbucks,starbucks
+office depot,office depot
+seven feathers truck,gas
+boxer ramen,boxer ramen
+marathon petro,gas
+pet food express,pet food express
+brickyard counter,brickyard counter
+car-izma auto spa,car-izma
+chevron,gas
+goldorado,goldorado
+lazy dog,lazy dog
+twbonkers toy,t.w. bonkers
+tj maxx,tj maxx
+staples,staples
+thai paradise,thai paradise
+keymelocksmiths,key me locksmiths
+coldstone,cold stone creamery
+big lots,big lots
+bel air,bel air
+surplus d,surplus
+gulf oil,gas
+lopez taqueria,lopez taqueria
+pilot,gas
+smog center,smog center
+petco,petco
+dutch bros,dutch bros
+little big burger,little big burger
+paypal,paypal
+topaz farm,topaz farm
+daves hot chicken,daves hot chicken
+batter up,batter up
+doordash dashpass,doordash pass
+best teriyaki,best teriyaki
+color me mine,color me mine
+dd doordash,doordash
+wal-mart,walmart
+ikea,ikea
+homedepot,home depot
+target,target
+ancestry,ancestry
+rovente pizzeria,rovente pizzeria
+bath and body works,bath & body works
+grid bar,grid bar & grill
+in n out,in n out
+dsw,dsw shoes
+coursraa,coursera
+standard plumning,standard plumbing
+u-haul,u-haul
+robnett's,robnett's hardware
+taste of sichuan,taste of sichuan
+wisecracks,wisecracks
+bcherbchse,bucherbuchse
+inkwell,inkwell
+sugoi sushi,sugoi sushi
+mcmenamins,mcmenamins
+monroe internat market,international market
+rite aid,rite aid
+dutchbros,dutch bros
+mandy's family,matt & mandy's family diner
+power kia,kia
+courtyard by marriott,marriott
+pdx sliders,pdx sliders
+stanfords restaurant,standford's restaurant
+space needle,space needle
+piroshky piroshky,piroshky piroshky
+funko everett,funko
+marketspice,rice & spice
+cannon beach hardware,cannon beach hardware
+golden age collectables,golden age collectables
+tillamook county,tillamook
+kings blvd one hr cleaner,kings cleaner
+jamba,jamba juice
+chase travel,chase travel
+touch car wash,personal touch car wash
+subway,subway
+grub santa,grub
+prime video,prime video
+ikenohana,ikenohana

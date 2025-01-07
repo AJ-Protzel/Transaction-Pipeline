@@ -1,0 +1,11 @@
+{
+    "FOLDER_PATH": "Data/Credit/CustomCash",
+    "REMOVE_ROW": 0,
+    "REMOVE_COL": ["*", "Address"],
+    "HEADER_MAPPING": {
+
+    },
+    "ACCOUNT": "Credit",
+    "BANK": "BofA",
+    "CARD": "Custom Cash"
+}

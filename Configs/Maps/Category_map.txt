@@ -1,0 +1,171 @@
+zelle,cash
+transfer,transfer
+interest,cash
+fee,cash
+deposit,cash
+withdrawal,cash
+costco,grocery
+free tax usa,cash
+pg&e,Bills & Utilities
+xfinity mobile,Bills & Utilities
+xfinity internet,Bills & Utilities
+pge,Bills & Utilities
+eid,Bills & Utilities
+fairyloot,Bills & Utilities
+el dorado trash,Bills & Utilities
+officemax,Shopping
+in n out,Restaurant
+carl's jr.,Restaurant
+gen korean bbq,Restaurant
+fred meyer,Groceries
+asian family market,Groceries
+steam,Shopping
+gas,Gas
+google xavier liard,Gas
+safeway,Groceries
+amazon,Shopping
+california dmv,Bills & Utilities
+usps,Shopping
+rocket mortgage,Bills & Utilities
+doordash pass,Bills & Utilities
+amazon prime,Bills & Utilities
+cricut subscription,Bills & Utilities
+mud bay,Shopping
+chipotle,Restaurant
+hmart,Groceries
+jack in the box,Restaurant
+tj maxx,Shopping
+craft warehouse,Shopping
+outback,Restaurant
+next level,Shopping
+amelia,Restaurant
+mcdonald's,Shopping
+retro games,Shopping
+trader joe's,Groceries
+uwajimaya,Shopping
+kizuki ramen,Restaurant
+screen door,Restaurant
+japanese garden,Shopping
+tulip farm,Shopping
+nomad leather,Shopping
+nectar froyo,Restaurant
+lowes,Shopping
+theater,Shopping
+paxton gate,Shopping
+paper source,Shopping
+pelican brewing,Restaurant
+the medow,Shopping
+the knock back,Restaurant
+urbanite,Shopping
+salt and pepper,Restaurant
+tea & tea,Restaurant
+new seasons,Groceries
+bubble n tea,Restaurant
+pho van,Restaurant
+osu store,Shopping
+adidas,Shopping
+maiale rose wood pizza,Restaurant
+hallmark,Shopping
+century theatres,Shopping
+krispy kreme,Restaurant
+oswego grill,Restaurant
+cinemark theatres,Shopping
+dollar tree,Shopping
+handel's homemade,Restaurant
+el campesino,Restaurant
+tom's pancake house,Restaurant
+kfc,Restaurant
+carl's jr,Restaurant
+fedex,Shopping
+etsy,Shopping
+din tai fung,Restaurant
+kindle subscription,Bills & Utilities
+goodwill,Shopping
+panda express,Restaurant
+oregon symphony,Shopping
+barns & nobel,Shopping
+mi linda puebla,Restaurant
+pip's doughnuts,Restaurant
+multnomah falls,Shopping
+carver cafe,Restaurant
+mediterranean rest,Restaurant
+home depot,Shopping
+ross,Shopping
+batteries plus,Shopping
+mercari,Bills & Utilities
+binary brewing,Restaurant
+honeybaked ham,Restaurant
+salt & straw,Restaurant
+red robin,Restaurant
+ups,Shopping
+prime taphouse,Restaurant
+fastrak,Bills & Utilities
+andrew's flowers,Shopping
+starbucks,Restaurant
+office depot,Shopping
+boxer ramen,Restaurant
+pet food express,Shopping
+brickyard counter,Restaurant
+car-izma,Shopping
+goldorado,Shopping
+lazy dog,Restaurant
+t.w. bonkers,Shopping
+staples,Shopping
+thai paradise,Restaurant
+key me locksmiths,Shopping
+cold stone creamery,Restaurant
+big lots,Groceries
+bel air,Restaurant
+surplus,Shopping
+lopez taqueria,Restaurant
+smog center,Shopping
+petco,Shopping
+dutch bros,Restaurant
+little big burger,Restaurant
+paypal,Cash
+topaz farm,Shopping
+daves hot chicken,Restaurant
+batter up,Restaurant
+best teriyaki,Restaurant
+color me mine,Shopping
+doordash,Restaurant
+walmart,Restaurant
+ikea,Shopping
+target,Shopping
+ancestry,Shopping
+rovente pizzeria,Restaurant
+bath & body works,Shopping
+grid bar & grill,Restaurant
+dsw shoes,Shopping
+coursera,Bills & Utilities
+standard plumbing,Shopping
+u-haul,Shopping
+robnett's hardware,Shopping
+taste of sichuan,Restaurant
+wisecracks,Restaurant
+bucherbuchse,Shopping
+inkwell,Shopping
+sugoi sushi,Restaurant
+mcmenamins,Restaurant
+international market,Groceries
+rite aid,Shopping
+matt & mandy's family diner,Restaurant
+kia,Shopping
+marriott,Shopping
+pdx sliders,Restaurant
+standford's restaurant,Restaurant
+space needle,Shopping
+piroshky piroshky,Restaurant
+funko,Shopping
+rice & spice,Groceries
+cannon beach hardware,Restaurant
+golden age collectables,Shopping
+tillamook,Restaurant
+kings cleaner,Shopping
+jamba juice,Restaurant
+chase travel,Shopping
+personal touch car wash,Shopping
+subway,Restaurant
+grub,Restaurant
+prime video,Shopping
+ikenohana,Restaurant

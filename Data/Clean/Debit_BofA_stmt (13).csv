@@ -1,0 +1,5 @@
+Year,Month,Date,Description,Category,Amount,Account,Bank,Card
+2023,September,09/18/2023,zelle,cash,1.0,Debit,BofA,Savings
+2023,September,09/25/2023,zelle,cash,210.0,Debit,BofA,Savings
+2023,September,09/25/2023,zelle,cash,15.5,Debit,BofA,Savings
+2023,October,10/05/2023,interest,cash,0.01,Debit,BofA,Savings

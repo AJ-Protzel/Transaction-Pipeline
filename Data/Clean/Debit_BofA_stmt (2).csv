@@ -1,0 +1,14 @@
+Year,Month,Date,Description,Category,Amount,Account,Bank,Card
+2024,August,08/08/2024,fee,cash,-8.0,Debit,BofA,Savings
+2024,August,08/12/2024,zelle,cash,200.0,Debit,BofA,Savings
+2024,August,08/15/2024,deposit,cash,50.0,Debit,BofA,Savings
+2024,August,08/16/2024,transfer,transfer,1.0,Debit,BofA,Savings
+2024,August,08/19/2024,transfer,transfer,-393.56,Debit,BofA,Savings
+2024,August,08/22/2024,deposit,cash,1497.32,Debit,BofA,Savings
+2024,August,08/26/2024,zelle,cash,3000.0,Debit,BofA,Savings
+2024,August,08/26/2024,zelle,cash,200.0,Debit,BofA,Savings
+2024,August,08/29/2024,transfer,transfer,-4298.32,Debit,BofA,Savings
+2024,September,09/03/2024,deposit,cash,666.0,Debit,BofA,Savings
+2024,September,09/03/2024,zelle,cash,-100.0,Debit,BofA,Savings
+2024,September,09/05/2024,interest,cash,0.01,Debit,BofA,Savings
+2024,January,01/02/2024,zelle,cash,1.00,Debit,BofA,Savings
