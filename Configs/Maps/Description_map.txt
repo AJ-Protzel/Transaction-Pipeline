@@ -25,7 +25,6 @@ pg&e,pg&e
 xfinity mobile,xfinity mobile
 comcast cable,xfinity internet
 portland general electric,pge
-el dorado irrigation,eid
 el dorado disposal,el dorado trash
 officemax,officemax
 in-n-out,in n out
@@ -107,7 +106,7 @@ goodwill,goodwill
 panda express,panda express
 etsy,etsy
 oregon symphony,oregon symphony
-barnes,barns & nobel
+barnes,barnes & noble
 mi linda puebla,mi linda puebla
 pip's,pip's doughnuts
 multnomah falls,multnomah falls
@@ -203,3 +202,187 @@ subway,subway
 grub santa,grub
 prime video,prime video
 ikenohana,ikenohana
+apple,apple store
+bill pay payment,transfer
+visible,visible
+bilt rewards,rent
+portland general,pge
+walgreens,walgreens
+bilt collection,bilt store
+progressive,progressive
+cwc wdc,gas
+big fish games,big fish games
+h mart,h mart
+king county recorders,king county recorders
+double mountain brew,double mountain brew
+nexusmods,nexus mods
+sierra,sierra
+goodtogo,goodtogo train
+litjoy,litjoy
+birrieria pdx,birrieria pdx
+airport parking,airport parking
+uber,uber
+miro tea,miro tea
+bellevue,bellevue
+disney store,disney store
+saars,saars
+sdot paybyphone,parking
+laz parking,parking
+seattlepremiumoutlets,seattle premium outlets
+jade garden,jade garden
+kinokuniya bookstores,kinokuniya
+abercrombie &amp; fitch 11391,abercrombie
+jersey mikes,jersey mikes
+huluplus,hulu plus
+sp ventures mrktplc,seattle flea market
+sui inc,sui inc
+pcc - fremont,community markets
+t&amp;t supermarket,t&t supermarket
+als music video,al's music video
+beecher's handmade,beecher's
+sea park parking,parking
+denny's,denny's
+haidilao hot pot,haidilao
+impark,parking
+andreas keller restaurant,andreas keller restaurant
+munchen haus,munchen haus
+leavenworth shirt,leavenworth shirt company
+leavenworth village,out west trading co
+prayer out reach,leavensworth food stand
+copper creek,copper creek
+aritzia,aritzia
+daiso,daiso
+seabra,seabra's
+mta*nyct paygo,nyc transit
+b&amp;h photo store,b&a photo
+muji,muji
+ess-a-bagel,ess a bagel
+classic photo boo,photo booth
+da gennaro ristorante,da gennaro ristorante
+pinkberry,pinkberry
+aldi,aldi
+waban market,waban
+woodbury commons,woodbury commons
+woodbury,woodbury commons
+shake shack,shake shack
+kung pao wok,kung pao wok
+l.a. burdick chocolate,la burdick chocolate
+beacon hill books,beacon hill books
+lazy sister,lazy sister
+poppa box,poppa box
+nuts factory,nuts factory 
+tatte bakery,tatte bakery
+shoprite,shoprite
+pmusa,toll
+star osco,star osco
+rei #161 princeton,rei
+billy hicks georgeto,billy hicks georgetown
+parkmobile,parking
+t j maxx,tj maxx
+sumatera restaurant,sumatera restaurant
+jaybee's,jaybee's
+salon nyla,salon nyla
+portland florist shop,portland florist
+mount rainier natl park,mount rainier park
+deq vip ne portland,portland smog
+kohl's,kohl's
+tiktok shop,tiktok
+sichuan taste,sichuan taste
+village merchants,village merchants
+house of vintage,house of vintage
+b&amp;h photo,b&a photo
+roloff farms,roloff farms
+kkoki bbq,kkoki bbq
+paris baguette,paris baguette
+doordashdashpa,door dash pass
+sp the meadow,the meadow
+standard plumbing,standard plumbing
+banfield,banfield
+hertztoll,hertz
+lyft,lyft
+enterprise rent-a-car,enterprise
+state parks discover pas,discover pass
+alamo rent-a-car,alamo
+njt rail my-tix,nj transit
+path tapp,path transit
+statue cruises,statue cruises
+hertz,hertz
+savin hill,savin hill transit
+kenmore,kenmore transit
+odot dmv,dmv
+tiktok merchant centre,tiktok
+birkenstock,birkenstock
+gnc.com,gnc
+la naranja,la naranja
+memory den,memory den
+tall boy fish &amp; chips,tall boy fish & chips
+sephora,sephora
+wendy's,wendy's
+wingstop,wingstop
+stardust diner,stardust diner
+lavender creek ge,lavender creek gems
+travel credit,travel
+washington square  or,washington square
+nopo paws,nopo paws
+vioc,valvoline
+gerbrock,gerbrock
+schwieterts cones and can,schwieterts
+tis the season,tis the season
+mos seafood,mo's seafood
+tiptons inc,tiptons
+north coast leather,north coast leather
+chewy.com,chewy
+recreation.gov,national park pass
+seaside confections i,seaside shops
+michaels stores,michaels
+thai bloom food cart,thai bloom
+the frying scotsman,the frying scotsman
+sorya asian market,sorya asian market
+homegoods,homegoods
+airbnb,airbnb
+pistils nursery,pistils nursery
+domino's,domino's
+wolfs head,wolfs head
+otaku import export,otaku import export
+boomers burgers,boomers
+petsmart,petsmart
+rugsusa.com,rugsusa
+avenue5 re,west end
+movinghelp.com,movinghelp
+greystar,prose
+five guys,five guys
+sushi chiyo inc,sushi chiyo
+known traveler credit,travel
+uscustoms trustedtraveler,global entry
+iconicst2679,iconic
+atlanta airport,atlanta airport
+batavia iii,batavia
+hudson st1861,hudson
+tillamook market,tillamook
+poor your nw trav,travel market
+irina moga dds,irina moga dentist
+hop*00r2qyy trimet 70,trimet
+mikiko mochi donuts,mikiko mochi donuts
+trimet,trimet
+auntie anne's,auntie anne's
+american eagle,american eagle
+calvin klein,calvin klein
+nonna emilia ristora,nonna emilia
+rover.com,rover
+burger king,burger king
+donut king,donut king
+xin ding dumpling house,xin ding
+freshfish poke,freshfish poke
+we feast llc,we feast
+beenverified.com,been verified
+qfc,qfc
+gmart - beaverton,gmart
+beginning balance as,null
+wise inc,wise
+none,null
+getaway,getaway
+nan,null
+null\,null
+eid,eid
+barns & nobel,barnes & noble
+el dorado irrigation dis,eid

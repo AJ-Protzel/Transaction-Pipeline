@@ -1,0 +1,14 @@
+Description,,Summary Amt.
+Beginning balance as of 12/06/2023,,"309.03"
+Total credits,,"1,000.01"
+Total debits,,"-8.00"
+Ending balance as of 01/05/2024,,"1,301.04"
+
+Date,Description,Amount,Running Bal.
+12/06/2023,Beginning balance as of 12/06/2023,,"309.03"
+12/06/2023,"Monthly Maintenance Fee","-8.00","301.03"
+12/07/2023,"Zelle payment from KATHLEEN ASHLEY for "Christmas gift"; Conf# h5h9caap8","500.00","801.03"
+12/26/2023,"Zelle payment from HENRY A PROTZEL for "Merry Christmas"; Conf# 99a71d8ow","400.00","1,201.03"
+01/02/2024,"Zelle payment from RANDAL LUCKMAN for "RV space rental for Jan. 2024."; Conf# rh1j71cia","99.00","1,300.03"
+01/02/2024,"Zelle payment from RANDAL LUCKMAN for "Test of Zelle transfer. Hi AJ, let me know if y"; Conf# owjcgtyu8","1.00","1,301.03"
+01/05/2024,"Interest Earned","0.01","1,301.04"

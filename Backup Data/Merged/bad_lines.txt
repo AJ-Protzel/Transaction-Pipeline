@@ -1,0 +1,2 @@
+Data\Dirty\Debit_BofA_Savings\stmt (13).csv: ['01/02/2024', 'Zelle payment from RANDAL LUCKMAN for Test of Zelle transfer. Hi AJ', ' let me know if y"; Conf# owjcgtyu8"', '1.00', '1,301.03']
+Data\Dirty\Debit_BofA_Savings\stmt (2).csv: ['11/07/2024', 'Zelle payment from KATHLEEN ASHLEY for GNC', ' Amazon medicine', ' and NY car"; Conf# wx147k5zs"', '853.29', '1,561.39']

@@ -1,7 +1,0 @@
-Year,Month,Date,Description,Category,Amount,Account,Bank,Card
-2023,April,04/06/2023,transfer,transfer,-896.22,Debit,BofA,Savings
-2023,May,05/01/2023,interest,cash,27.35,Debit,BofA,Savings
-2023,May,05/02/2023,transfer,transfer,-1600.0,Debit,BofA,Savings
-2023,May,05/02/2023,transfer,transfer,-600.0,Debit,BofA,Savings
-2023,May,05/02/2023,transfer,transfer,-1000.0,Debit,BofA,Savings
-2023,May,05/05/2023,interest,cash,1.36,Debit,BofA,Savings

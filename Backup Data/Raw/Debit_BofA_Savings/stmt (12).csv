@@ -1,0 +1,19 @@
+Description,,Summary Amt.
+Beginning balance as of 01/06/2024,,"1,301.04"
+Total credits,,"2,152.01"
+Total debits,,"-2,953.04"
+Ending balance as of 02/05/2024,,"500.01"
+
+Date,Description,Amount,Running Bal.
+01/06/2024,Beginning balance as of 01/06/2024,,"1,301.04"
+01/08/2024,"TRANSFER JOHN PROTZEL:ADRIEN PROTZEL Confirmation# XXXXX49556","-801.14","499.90"
+01/08/2024,"Monthly Maintenance Fee","-8.00","491.90"
+01/09/2024,"Zelle payment from KATHLEEN ASHLEY Conf# xnpf2t5mz","950.00","1,441.90"
+01/09/2024,"TRANSFER JOHN PROTZEL:ADRIEN PROTZEL Confirmation# XXXXX76073","-930.00","511.90"
+01/22/2024,"Zelle payment from KATHLEEN ASHLEY for "Rent"; Conf# yfxcf7qif","264.00","775.90"
+01/30/2024,"Zelle payment from KATHLEEN ASHLEY for "Rent"; Conf# xfl5joxqf","288.00","1,063.90"
+02/01/2024,"Zelle payment from RANDAL LUCKMAN for "Feb. 2024 toy space rental"; Conf# n7x2cx9tc","100.00","1,163.90"
+02/05/2024,"Zelle payment from KATHLEEN ASHLEY for "Rent"; Conf# jsub4axw3","350.00","1,513.90"
+02/05/2024,"Zelle payment from HENRY A PROTZEL for "Happy Birthday!"; Conf# 99a90wf4p","200.00","1,713.90"
+02/05/2024,"TRANSFER JOHN PROTZEL:ADRIEN PROTZEL Confirmation# XXXXX15674","-1,213.90","500.00"
+02/05/2024,"Interest Earned","0.01","500.01"

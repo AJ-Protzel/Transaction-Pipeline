@@ -1,0 +1,44 @@
+[
+    {
+        "type": "Credit",
+        "bank": "Bilt",
+        "card": "Bilt",
+        "remove_rows": 0,
+        "add_header": ["Date", "Amount", "*", "*", "Description"]
+    },
+    {
+        "type": "Credit",
+        "bank": "BofA",
+        "card": "Custom",
+        "remove_rows": 1,
+        "add_header": ["Date", "*", "Description", "*", "Amount"]
+    },
+    {
+        "type": "Credit",
+        "bank": "Chase",
+        "card": "Freedom",
+        "remove_rows": 1,
+        "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
+    },
+    {
+        "type": "Credit",
+        "bank": "Chase",
+        "card": "Prime",
+        "remove_rows": 1,
+        "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
+    },
+    {
+        "type": "Credit",
+        "bank": "Chase",
+        "card": "Reserve",
+        "remove_rows": 1,
+        "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
+    },
+    {
+        "type": "Debit",
+        "bank": "BofA",
+        "card": "Savings",
+        "remove_rows": 7,
+        "add_header": ["Date", "Description", "Amount", "*"]
+    }
+]

@@ -1,5 +1,0 @@
-Year,Month,Date,Description,Category,Amount,Account,Bank,Card
-2023,October,10/20/2023,deposit,cash,725.15,Debit,BofA,Savings
-2023,October,10/23/2023,zelle,cash,61.5,Debit,BofA,Savings
-2023,November,11/03/2023,transfer,transfer,-1013.21,Debit,BofA,Savings
-2023,November,11/06/2023,interest,cash,0.03,Debit,BofA,Savings

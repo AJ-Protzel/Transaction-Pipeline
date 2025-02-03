@@ -1,0 +1,16 @@
+Description,,Summary Amt.
+Beginning balance as of 11/05/2024,,"708.10"
+Total credits,,"1,018.11"
+Total debits,,"-160.00"
+Ending balance as of 12/05/2024,,"1,566.21"
+
+Date,Description,Amount,Running Bal.
+11/05/2024,Beginning balance as of 11/05/2024,,"708.10"
+11/07/2024,"Zelle payment from KATHLEEN ASHLEY for "GNC, Amazon medicine, and NY car"; Conf# wx147k5zs","853.29","1,561.39"
+11/07/2024,"ROBINHOOD DES:Funds ID:XXXXX5126 INDN:Adriem Protzel CO ID:XXXXX64776 WEB","-25.00","1,536.39"
+11/07/2024,"ROBINHOOD DES:Funds ID:XXXXX5126 INDN:Adriem Protzel CO ID:XXXXX64776 WEB","-25.00","1,511.39"
+11/08/2024,"ROBINHOOD DES:Funds ID:XXXXX5126 INDN:Adriem Protzel CO ID:XXXXX64776 WEB","-10.00","1,501.39"
+11/12/2024,"Zelle payment from KATHLEEN ASHLEY for "Camera stuff"; Conf# svy3z8rvq","81.98","1,583.37"
+11/21/2024,"Zelle payment from REID MICHAELS for "COSCO"; Conf# T0Y8JV56H","82.83","1,666.20"
+12/02/2024,"Zelle payment to Doug Zeller for "December vehicle storage"; Conf# g8lti7ei9","-100.00","1,566.20"
+12/05/2024,"Interest Earned","0.01","1,566.21"

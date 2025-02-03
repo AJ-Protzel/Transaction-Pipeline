@@ -1,0 +1,9 @@
+Description,,Summary Amt.
+Beginning balance as of 07/07/2023,,"500.05"
+Total credits,,"0.01"
+Total debits,,"0.00"
+Ending balance as of 08/08/2023,,"500.06"
+
+Date,Description,Amount,Running Bal.
+07/07/2023,Beginning balance as of 07/07/2023,,"500.05"
+08/08/2023,"Interest Earned","0.01","500.06"

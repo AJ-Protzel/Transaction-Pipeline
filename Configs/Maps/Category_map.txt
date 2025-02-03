@@ -1,171 +1,327 @@
-zelle,cash
+apple store,shopping
+xfinity internet,utility
 transfer,transfer
-interest,cash
-fee,cash
-deposit,cash
-withdrawal,cash
+visible,utility
+rent,utility
+pge,utility
+walgreens,shopping
+xfinity mobile,utility
+bilt store,shopping
+mcdonald's,dining
 costco,grocery
-free tax usa,cash
-pg&e,Bills & Utilities
-xfinity mobile,Bills & Utilities
-xfinity internet,Bills & Utilities
-pge,Bills & Utilities
-eid,Bills & Utilities
-fairyloot,Bills & Utilities
-el dorado trash,Bills & Utilities
-officemax,Shopping
-in n out,Restaurant
-carl's jr.,Restaurant
-gen korean bbq,Restaurant
-fred meyer,Groceries
-asian family market,Groceries
-steam,Shopping
-gas,Gas
-google xavier liard,Gas
-safeway,Groceries
-amazon,Shopping
-california dmv,Bills & Utilities
-usps,Shopping
-rocket mortgage,Bills & Utilities
-doordash pass,Bills & Utilities
-amazon prime,Bills & Utilities
-cricut subscription,Bills & Utilities
-mud bay,Shopping
-chipotle,Restaurant
-hmart,Groceries
-jack in the box,Restaurant
-tj maxx,Shopping
-craft warehouse,Shopping
-outback,Restaurant
-next level,Shopping
-amelia,Restaurant
-mcdonald's,Shopping
-retro games,Shopping
-trader joe's,Groceries
-uwajimaya,Shopping
-kizuki ramen,Restaurant
-screen door,Restaurant
-japanese garden,Shopping
-tulip farm,Shopping
-nomad leather,Shopping
-nectar froyo,Restaurant
-lowes,Shopping
-theater,Shopping
-paxton gate,Shopping
-paper source,Shopping
-pelican brewing,Restaurant
-the medow,Shopping
-the knock back,Restaurant
-urbanite,Shopping
-salt and pepper,Restaurant
-tea & tea,Restaurant
-new seasons,Groceries
-bubble n tea,Restaurant
-pho van,Restaurant
-osu store,Shopping
-adidas,Shopping
-maiale rose wood pizza,Restaurant
-hallmark,Shopping
-century theatres,Shopping
-krispy kreme,Restaurant
-oswego grill,Restaurant
-cinemark theatres,Shopping
-dollar tree,Shopping
-handel's homemade,Restaurant
-el campesino,Restaurant
-tom's pancake house,Restaurant
-kfc,Restaurant
-carl's jr,Restaurant
-fedex,Shopping
-etsy,Shopping
-din tai fung,Restaurant
-kindle subscription,Bills & Utilities
-goodwill,Shopping
-panda express,Restaurant
-oregon symphony,Shopping
-barns & nobel,Shopping
-mi linda puebla,Restaurant
-pip's doughnuts,Restaurant
-multnomah falls,Shopping
-carver cafe,Restaurant
-mediterranean rest,Restaurant
-home depot,Shopping
-ross,Shopping
-batteries plus,Shopping
-mercari,Bills & Utilities
-binary brewing,Restaurant
-honeybaked ham,Restaurant
-salt & straw,Restaurant
-red robin,Restaurant
-ups,Shopping
-prime taphouse,Restaurant
-fastrak,Bills & Utilities
-andrew's flowers,Shopping
-starbucks,Restaurant
-office depot,Shopping
-boxer ramen,Restaurant
-pet food express,Shopping
-brickyard counter,Restaurant
-car-izma,Shopping
-goldorado,Shopping
-lazy dog,Restaurant
-t.w. bonkers,Shopping
-staples,Shopping
-thai paradise,Restaurant
-key me locksmiths,Shopping
-cold stone creamery,Restaurant
-big lots,Groceries
-bel air,Restaurant
-surplus,Shopping
-lopez taqueria,Restaurant
-smog center,Shopping
-petco,Shopping
-dutch bros,Restaurant
-little big burger,Restaurant
-paypal,Cash
-topaz farm,Shopping
-daves hot chicken,Restaurant
-batter up,Restaurant
-best teriyaki,Restaurant
-color me mine,Shopping
-doordash,Restaurant
-walmart,Restaurant
-ikea,Shopping
-target,Shopping
-ancestry,Shopping
-rovente pizzeria,Restaurant
-bath & body works,Shopping
-grid bar & grill,Restaurant
-dsw shoes,Shopping
-coursera,Bills & Utilities
-standard plumbing,Shopping
-u-haul,Shopping
-robnett's hardware,Shopping
-taste of sichuan,Restaurant
-wisecracks,Restaurant
-bucherbuchse,Shopping
-inkwell,Shopping
-sugoi sushi,Restaurant
-mcmenamins,Restaurant
-international market,Groceries
-rite aid,Shopping
-matt & mandy's family diner,Restaurant
-kia,Shopping
-marriott,Shopping
-pdx sliders,Restaurant
-standford's restaurant,Restaurant
-space needle,Shopping
-piroshky piroshky,Restaurant
-funko,Shopping
-rice & spice,Groceries
-cannon beach hardware,Restaurant
-golden age collectables,Shopping
-tillamook,Restaurant
-kings cleaner,Shopping
-jamba juice,Restaurant
-chase travel,Shopping
-personal touch car wash,Shopping
-subway,Restaurant
-grub,Restaurant
-prime video,Shopping
-ikenohana,Restaurant
+fairyloot,subscription
+gas,gas
+progressive,utility
+safeway,grocery
+steam,shopping
+asian family market,grocery
+big fish games,shopping
+usps,shopping
+getaway,travel
+fred meyer,grocery
+target,grocery
+h mart,grocery
+new seasons,grocery
+bubble n tea,dining
+double mountain brew,dining
+nexus mods,shopping
+sierra,shopping
+goodtogo train,travel
+litjoy,shopping
+birrieria pdx,dining
+dutch bros,dining
+airport parking,travel
+uber,travel
+standford's restaurant,dining
+miro tea,dining
+bellevue,shopping
+barnes & noble,shopping
+panda express,dining
+disney store,shopping
+saars,grocery
+parking,travel
+tj maxx,shopping
+seattle premium outlets,shopping
+jade garden,dining
+kinokuniya,shopping
+abercrombie,shopping
+jersey mikes,dining
+hulu plus,subscription
+seattle flea market,shopping
+sui inc,shopping
+community markets,shopping
+rice & spice,grocery
+golden age collectables,shopping
+goodwill,shopping
+t&t supermarket,grocery
+al's music video,shopping
+beecher's,dining
+uwajimaya,grocery
+denny's,dining
+haidilao,dining
+andreas keller restaurant,dining
+munchen haus,dining
+leavenworth shirt company,shopping
+out west trading co,shopping
+leavensworth food stand,dining
+copper creek,dining
+aritzia,shopping
+daiso,shopping
+seabra's,grocery
+nyc transit,travel
+b&a photo,shopping
+muji,shopping
+ess a bagel,dining
+da gennaro ristorante,dining
+pinkberry,dining
+aldi,grocery
+waban,dining
+woodbury commons,shopping
+chipotle,dining
+shake shack,dining
+kung pao wok,dining
+la burdick chocolate,dining
+beacon hill books,shopping
+lazy sister,dining
+poppa box,dining
+nuts factory,dining
+tatte bakery,dining
+shoprite,shopping
+toll,travel
+star osco,gas
+rei,shopping
+billy hicks georgetown,shopping
+sumatera restaurant,dining
+jaybee's,dining
+salon nyla,shopping
+portland florist,shopping
+mount rainier park,travel
+dollar tree,shopping
+kohl's,shopping
+tiktok,shopping
+trader joe's,grocery
+sichuan taste,dining
+home depot,shopping
+ups,shopping
+village merchants,shopping
+house of vintage,shopping
+screen door,dining
+kkoki bbq,dining
+paris baguette,dining
+amazon,shopping
+door dash pass,subscription
+doordash pass,subscription
+cricut subscription,subscription
+mud bay,grocery
+hmart,grocery
+jack in the box,dining
+craft warehouse,shopping
+outback,dining
+next level,shopping
+amelia,dining
+retro games,shopping
+kizuki ramen,dining
+japanese garden,travel
+free tax usa,misc
+google xavier liard,misc
+king county recorders,misc
+photo booth,misc
+portland smog,misc
+roloff farms,misc
+tulip farm,misc
+nomad leather,shopping
+nectar froyo,dining
+lowes,shopping
+theater,misc
+paxton gate,shopping
+paper source,shopping
+pelican brewing,dining
+the meadow,shopping
+the knock back,dining
+urbanite,shopping
+salt and pepper,dining
+tea & tea,dining
+pho van,dining
+osu store,shopping
+adidas,shopping
+maiale rose wood pizza,dining
+hallmark,shopping
+century theatres,misc
+krispy kreme,dining
+oswego grill,dining
+cinemark theatres,misc
+handel's homemade,dining
+el campesino,grocery
+tom's pancake house,dining
+kfc,dining
+carl's jr.,dining
+fedex,misc
+etsy,shopping
+din tai fung,dining
+kindle subscription,subscription
+oregon symphony,misc
+mi linda puebla,dining
+pip's doughnuts,dining
+multnomah falls,travel
+carver cafe,dining
+mediterranean rest,dining
+ross,shopping
+batteries plus,shopping
+mercari,shopping
+binary brewing,dining
+honeybaked ham,dining
+salt & straw,dining
+red robin,dining
+prime taphouse,dining
+fastrak,travel
+andrew's flowers,shopping
+starbucks,dining
+office depot,shopping
+boxer ramen,dining
+pet food express,grocery
+brickyard counter,dining
+car-izma,misc
+goldorado,shopping
+in n out,dining
+lazy dog,dining
+t.w. bonkers,shopping
+staples,shopping
+thai paradise,dining
+el dorado trash,utility
+key me locksmiths,shopping
+cold stone creamery,dining
+big lots,shopping
+bel air,grocery
+surplus,shopping
+lopez taqueria,dining
+smog center,misc
+petco,shopping
+little big burger,dining
+paypal,transfer
+topaz farm,misc
+daves hot chicken,dining
+batter up,dining
+best teriyaki,dining
+color me mine,misc
+doordash,dining
+walmart,grocery
+ikea,shopping
+ancestry,misc
+rovente pizzeria,dining
+bath & body works,shopping
+grid bar & grill,dining
+dsw shoes,shopping
+coursera,misc
+standard plumbing,shopping
+u-haul,travel
+robnett's hardware,shopping
+taste of sichuan,dining
+wisecracks,dining
+bucherbuchse,shopping
+inkwell,shopping
+sugoi sushi,dining
+mcmenamins,dining
+international market,grocery
+rite aid,shopping
+matt & mandy's family diner,dining
+kia,misc
+marriott,travel
+pdx sliders,dining
+space needle,shopping
+piroshky piroshky,dining
+funko,shopping
+cannon beach hardware,dining
+tillamook,dining
+kings cleaner,misc
+jamba juice,dining
+chase travel,travel
+personal touch car wash,misc
+subway,dining
+grub,dining
+prime video,subscription
+ikenohana,dining
+banfield,subscription
+hertz,travel
+lyft,travel
+enterprise,travel
+discover pass,travel
+alamo,travel
+fee,misc
+nj transit,travel
+path transit,travel
+statue cruises,travel
+savin hill transit,travel
+kenmore transit,travel
+dmv,misc
+birkenstock,shopping
+gnc,shopping
+la naranja,dining
+memory den,shopping
+tall boy fish & chips,dining
+sephora,shopping
+wendy's,dining
+wingstop,dining
+stardust diner,dining
+lavender creek gems,shopping
+washington square,shopping
+nopo paws,grocery
+valvoline,misc
+gerbrock,misc
+schwieterts,shopping
+tis the season,shopping
+mo's seafood,dining
+tiptons,shopping
+north coast leather,shopping
+chewy,grocery
+national park pass,travel
+seaside shops,shopping
+michaels,shopping
+thai bloom,dining
+the frying scotsman,dining
+sorya asian market,grocery
+homegoods,shopping
+airbnb,travel
+pistils nursery,shopping
+domino's,dining
+wolfs head,dining
+otaku import export,shopping
+boomers,dining
+petsmart,grocery
+rugsusa,shopping
+west end,utility
+movinghelp,misc
+prose,utility
+five guys,dining
+sushi chiyo,dining
+global entry,misc
+iconic,shopping
+atlanta airport,dining
+batavia,dining
+hudson,dining
+travel market,grocery
+irina moga dentist,misc
+trimet,travel
+mikiko mochi donuts,dining
+auntie anne's,dining
+travel,travel
+american eagle,shopping
+calvin klein,shopping
+nonna emilia,dining
+rover,misc
+burger king,dining
+donut king,dining
+eid,utility
+xin ding,dining
+freshfish poke,dining
+we feast,dining
+been verified,misc
+qfc,grocery
+gmart,grocery
+zelle,transfer
+deposit,transfer
+interest,transfer
+withdrawal,transfer
+rocket mortgage,utility
+wise,transfer
+carl's jr,dining
+el dorado irrigation dis,utility
