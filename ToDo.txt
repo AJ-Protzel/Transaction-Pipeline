@@ -1,0 +1,24 @@
+categories should be:
+groceries
+dining
+gas
+shopping
+travel - all things with travel or moving or experience (farms, etc)
+transfer - card payments - rows will be removed
+cash - money in or out like zelle, paypal
+
+
+
+redo category mapping
+
+refactor code to call functions from main 
+break processess into smaller functions to call, oirder the function processess
+
+Wish: make single persistant window to work from instead of multiple pop ups
+	opens from main, runs programs until center of window needs to populate
+	shows drop box
+	loading bar for cleaning data
+	etc
+
+
+
