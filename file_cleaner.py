@@ -25,8 +25,6 @@ Functions:
 import os
 import pandas as pd
 import json
-import shutil
-import subprocess
 from datetime import datetime
 
 def list_files_in_directory(directory):
