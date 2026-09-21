@@ -1,43 +1,36 @@
 [
     {
         "type": "Credit",
-        "bank": "Bilt",
-        "card": "Bilt",
+        "bank": "AlphaBank",
+        "card": "Rewards",
         "remove_rows": 0,
         "add_header": ["Date", "Amount", "*", "*", "Description"]
     },
     {
         "type": "Credit",
-        "bank": "BofA",
-        "card": "Custom",
+        "bank": "AlphaBank",
+        "card": "Cashback",
         "remove_rows": 1,
         "add_header": ["Date", "*", "Description", "*", "Amount"]
     },
     {
         "type": "Credit",
-        "bank": "Chase",
-        "card": "Freedom",
+        "bank": "BetaBank",
+        "card": "Everyday",
         "remove_rows": 1,
         "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
     },
     {
         "type": "Credit",
-        "bank": "Chase",
-        "card": "Prime",
-        "remove_rows": 1,
-        "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
-    },
-    {
-        "type": "Credit",
-        "bank": "Chase",
-        "card": "Reserve",
+        "bank": "BetaBank",
+        "card": "Travel",
         "remove_rows": 1,
         "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
     },
     {
         "type": "Debit",
-        "bank": "BofA",
-        "card": "Savings",
+        "bank": "AlphaBank",
+        "card": "Checking",
         "remove_rows": 7,
         "add_header": ["Date", "Description", "Amount", "*"]
     }

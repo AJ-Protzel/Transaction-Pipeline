@@ -71,8 +71,8 @@ Example entry:
 ```json
 {
   "type": "Credit",
-  "bank": "Chase",
-  "card": "Freedom",
+  "bank": "BetaBank",
+  "card": "Everyday",
   "remove_rows": 1,
   "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
 }
