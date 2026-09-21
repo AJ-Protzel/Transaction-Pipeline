@@ -1,0 +1,168 @@
+zelle,zelle
+transfer,transfer
+interest,interest
+fee,fee
+deposit,deposit
+withdrwl,withdrawal
+counter credit,deposit
+bill payment,transfer
+wire,transfer
+cashreward,interest
+charge refund,fee
+withdrawal,withdrawal
+costco,costco
+ba electronic payment,transfer
+freetaxusa,free tax usa
+fairyloot,fairyloot
+xfinity mobile,xfinity mobile
+comcast cable,xfinity internet
+officemax,officemax
+in-n-out,in n out
+carl's jr,carl's jr.
+steam purchase,steam
+steamgames,steam
+safeway,safeway
+amzn mktp,amazon
+comcast,xfinity internet
+usps,usps
+amazon mktpl,amazon
+doordashdashpass,doordash pass
+amazon.com,amazon
+amazon prime,amazon prime
+payment thank you,transfer
+cricut,cricut subscription
+chipotle,chipotle
+hmart,hmart
+jack in the box,jack in the box
+automatic payment - thank,transfer
+tjmaxx,tj maxx
+outback,outback
+mcdonalds,mcdonald's
+trader joe,trader joe's
+lowes,lowes
+mcdonald,mcdonald's
+adidas,adidas
+love's,gas
+century theatres,century theatres
+krispy kreme,krispy kreme
+cinemark,cinemark theatres
+dollar tree,dollar tree
+kfc,kfc
+carls jr,carl's jr
+fedex,fedex
+etsy inc,etsy
+din tai fung,din tai fung
+kindle unlt,kindle subscription
+goodwill,goodwill
+panda express,panda express
+etsy,etsy
+barnes,barnes & noble
+the home depot,home depot
+ross,ross
+batteries plus,batteries plus
+mercari,mercari
+honeybaked ham,honeybaked ham
+red robin,red robin
+ups,ups
+starbucks,starbucks
+office depot,office depot
+marathon petro,gas
+chevron,gas
+tj maxx,tj maxx
+staples,staples
+coldstone,cold stone creamery
+big lots,big lots
+gulf oil,gas
+pilot,gas
+petco,petco
+dutch bros,dutch bros
+paypal,paypal
+daves hot chicken,daves hot chicken
+doordash dashpass,doordash pass
+dd doordash,doordash
+wal-mart,walmart
+ikea,ikea
+homedepot,home depot
+target,target
+bath and body works,bath & body works
+in n out,in n out
+dsw,dsw shoes
+coursraa,coursera
+u-haul,u-haul
+rite aid,rite aid
+dutchbros,dutch bros
+courtyard by marriott,marriott
+funko,funko
+jamba,jamba juice
+chase travel,chase travel
+subway,subway
+prime video,prime video
+apple,apple store
+bill pay payment,transfer
+visible,visible
+walgreens,walgreens
+progressive,progressive
+big fish games,big fish games
+h mart,h mart
+nexusmods,nexus mods
+sierra,sierra
+litjoy,litjoy
+airport parking,airport parking
+uber,uber
+disney store,disney store
+laz parking,parking
+kinokuniya bookstores,kinokuniya
+abercrombie,abercrombie
+jersey mikes,jersey mikes
+huluplus,hulu plus
+denny's,denny's
+haidilao hot pot,haidilao
+impark,parking
+aritzia,aritzia
+daiso,daiso
+muji,muji
+pinkberry,pinkberry
+aldi,aldi
+shake shack,shake shack
+shoprite,shoprite
+rei #,rei
+parkmobile,parking
+t j maxx,tj maxx
+kohl's,kohl's
+tiktok shop,tiktok
+paris baguette,paris baguette
+doordashdashpa,door dash pass
+hertztoll,hertz
+lyft,lyft
+enterprise rent-a-car,enterprise
+alamo rent-a-car,alamo
+hertz,hertz
+tiktok merchant centre,tiktok
+birkenstock,birkenstock
+gnc.com,gnc
+sephora,sephora
+wendy's,wendy's
+wingstop,wingstop
+travel credit,travel
+vioc,valvoline
+chewy.com,chewy
+recreation.gov,national park pass
+michaels stores,michaels
+homegoods,homegoods
+airbnb,airbnb
+domino's,domino's
+petsmart,petsmart
+rugsusa.com,rugsusa
+movinghelp.com,movinghelp
+five guys,five guys
+known traveler credit,travel
+uscustoms trustedtraveler,global entry
+auntie anne's,auntie anne's
+american eagle,american eagle
+calvin klein,calvin klein
+rover.com,rover
+burger king,burger king
+beginning balance as,null
+none,null
+nan,null
+null\,null
