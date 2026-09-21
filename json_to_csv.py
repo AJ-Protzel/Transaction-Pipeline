@@ -28,6 +28,10 @@ def json_to_csv(json_file_path, csv_file_path):
     with open(json_file_path, mode='r', encoding='utf-8') as json_file:
         data = json.load(json_file)
 
+    # Nothing to convert if the JSON file holds no rows
+    if not data:
+        return
+
     # Get the keys for the CSV header from the first dictionary in the list
     header = data[0].keys()
 
@@ -41,8 +45,8 @@ def json_to_csv(json_file_path, csv_file_path):
     os.remove(json_file_path)
 
 # Specify the file paths
-json_file_path = 'Data/clean.json'
-csv_file_path = 'Data/clean.csv'
+json_file_path = 'data/clean.json'
+csv_file_path = 'data/clean.csv'
 
 # Convert the JSON to CSV and remove the old JSON file
 json_to_csv(json_file_path, csv_file_path)

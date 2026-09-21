@@ -5,24 +5,30 @@ This program sequentially calls other scripts to import, manage, and clean data.
 """
 
 import subprocess
+import sys
+
+
+def run_step(script, label):
+    """Run a pipeline step and stop the pipeline if it fails."""
+    result = subprocess.run([sys.executable, script])
+    if result.returncode != 0:
+        print(f"{label}......Failed")
+        raise SystemExit(result.returncode)
+    print(f"{label}......Done")
+
 
 if __name__ == "__main__":
-    # Csk user to import files and to which folder <Type>_<Bank>_<Card>
-    subprocess.run(["python", "file_importer.py"])
-    print("File Importing......Done")
+    # Ask user to import files and to which folder <Type>_<Bank>_<Card>
+    run_step("file_importer.py", "File Importing")
 
     # Cleans headers and merges multiple files in single bank account file
-    subprocess.run(["python", "file_merger.py"])
-    print("File Merging......Done")
+    run_step("file_merger.py", "File Merging")
 
-    # Removes, renames, adds, splits columns, merges into single clean file in Clean folder
-    subprocess.run(["python", "file_cleaner.py"])
-    print("File Cleaning......Done")
+    # Removes, renames, adds, splits columns, merges into single clean file in clean folder
+    run_step("file_cleaner.py", "File Cleaning")
 
     # Convert CSV to JSON
-    subprocess.run(["python", "CSV_to_JSON.py"])
-    print("CSV to JSON......Done")
+    run_step("csv_to_json.py", "CSV to JSON")
 
-    # Convert JSONto CSV
-    subprocess.run(["python", "JSON_to_CSV.py"])
-    print("JSON to CSV......Done")
+    # Convert JSON to CSV
+    run_step("json_to_csv.py", "JSON to CSV")

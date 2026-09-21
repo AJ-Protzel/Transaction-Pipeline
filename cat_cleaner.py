@@ -13,7 +13,7 @@ Modules used:
 
 Functions:
 - load_category_map(): Loads the category map from a file.
-- check_description(row): Checks the description against the category map and
+- categorize_description(row): Checks the description against the category map and
   displays a manual input window if no match is found.
 """
 
@@ -22,7 +22,7 @@ import tkinter as tk
 import os
 
 # Load the CSV file
-csv_file_path = 'Data/dirty.csv'
+csv_file_path = 'data/dirty.csv'
 df = pd.read_csv(csv_file_path)
 
 # Ensure the 'Description' column is of type string and convert to lowercase
@@ -30,7 +30,7 @@ df['Description'] = df['Description'].astype(str).str.lower()
 
 def load_category_map():
     """Load the category map file."""
-    category_map_file_path = 'Configs/Maps/category_map.txt'
+    category_map_file_path = 'configs/maps/category_map.txt'
     category_map = {}
     with open(category_map_file_path, 'r') as f:
         for line in f:
@@ -39,24 +39,28 @@ def load_category_map():
                 category_map[parts[0]] = parts[1]
     return category_map
 
-def check_description(row):
-    """Check descriptions based on the mapping."""
+def categorize_description(row):
+    """Categorize descriptions based on the mapping."""
     category_map = load_category_map()
     description = row['Description']
     for keyword, mapped_category in category_map.items():
         if keyword in description:
             return mapped_category
-    
+
     # If no mapping is found, show a popup window with the current description
+    selected_category = ""
+
     def cancel():
         root.destroy()
-        raise SystemExit
+        raise SystemExit(1)
 
     def skip():
         root.destroy()
 
     def add_mapping(category):
-        with open('Configs/Maps/category_map.txt', 'a') as f:
+        nonlocal selected_category
+        selected_category = category.lower()
+        with open('configs/maps/category_map.txt', 'a') as f:
             f.write(f"{description},{category.lower()}\n")
         root.destroy()
 
@@ -107,12 +111,12 @@ def check_description(row):
 
     root.mainloop()
 
-    return description
+    return selected_category
 
-df['Category'] = df.apply(check_description, axis=1)
+df['Category'] = df.apply(categorize_description, axis=1)
 
 # Save the modified DataFrame back to a new CSV file
-new_csv_file_path = 'Data/clean.csv'
+new_csv_file_path = 'data/clean.csv'
 df.to_csv(new_csv_file_path, index=False)
 
 # Remove the original file after saving the new one

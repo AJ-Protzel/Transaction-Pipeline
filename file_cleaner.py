@@ -10,7 +10,6 @@ Modules used:
 - json: For reading configuration files.
 - shutil: For file operations.
 - subprocess: For running external scripts.
-- datetime: For date and time operations.
 
 Functions:
 - list_files_in_directory(directory): Lists all files in a directory and its subdirectories.
@@ -23,11 +22,18 @@ Functions:
 """
 
 import os
+import sys
 import pandas as pd
 import json
 import shutil
 import subprocess
-from datetime import datetime
+
+
+def run_step(script):
+    """Run a sub-step and stop if it fails."""
+    result = subprocess.run([sys.executable, script])
+    if result.returncode != 0:
+        raise SystemExit(result.returncode)
 
 def list_files_in_directory(directory):
     """List all files in a directory and its subdirectories."""
@@ -81,10 +87,10 @@ def remove_empty_amount_rows(file_path):
     df.to_csv(file_path, index=False)
 
 # Directory to search
-directory = 'Data'
+directory = 'data'
 
-# Load config.json from Configs folder
-with open('Configs/config.json', 'r') as f:
+# Load config.json from configs folder
+with open('configs/config.json', 'r') as f:
     configs = json.load(f)
 
 # New header to be applied to all CSV files
@@ -131,7 +137,7 @@ for root, dirs, files in os.walk(directory):
         shutil.rmtree(os.path.join(root, dir))
 
 # Call bad_lines_cleaner.py as a subprocess
-subprocess.run(['python', 'bad_lines_cleaner.py'])
+run_step('bad_lines_cleaner.py')
 
 # Fill in Year and Month columns after bad_lines_cleaner.py has run
 fill_year_month_columns(os.path.join(directory, 'dirty.csv'))
@@ -140,7 +146,7 @@ fill_year_month_columns(os.path.join(directory, 'dirty.csv'))
 remove_empty_amount_rows(os.path.join(directory, 'dirty.csv'))
 
 # Call desc_cleaner.py as a subprocess
-subprocess.run(['python', 'desc_cleaner.py'])
+run_step('desc_cleaner.py')
 
 # Call cat_cleaner.py as a subprocess
-subprocess.run(['python', 'cat_cleaner.py'])
+run_step('cat_cleaner.py')

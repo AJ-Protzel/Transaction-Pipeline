@@ -18,7 +18,7 @@ import pandas as pd
 import tkinter as tk
 
 # Load the CSV file
-csv_file_path = 'Data/dirty.csv'
+csv_file_path = 'data/dirty.csv'
 df = pd.read_csv(csv_file_path)
 
 # Ensure the 'Description' column is of type string and convert to lowercase
@@ -26,7 +26,7 @@ df['Description'] = df['Description'].astype(str).str.lower()
 
 def load_description_map():
     """Load the description map file."""
-    description_map_file_path = 'Configs/Maps/description_map.txt'
+    description_map_file_path = 'configs/maps/description_map.txt'
     description_map = {}
     with open(description_map_file_path, 'r') as f:
         for line in f:
@@ -46,19 +46,24 @@ def replace_description(row):
             return mapped_description
     
     # If no mapping is found, show a popup window with the current description
+    entered_description = description
+
     def cancel():
         root.destroy()
-        raise SystemExit
+        raise SystemExit(1)
 
     def skip():
         root.destroy()
 
     def enter(event=None):
+        nonlocal entered_description
         keyword = keyword_entry.get().lower()
         true_description = true_description_entry.get().lower()
+        if true_description:
+            entered_description = true_description
         
         # Append the new mapping to the description_map.txt file
-        with open('Configs/Maps/description_map.txt', 'a') as f:
+        with open('configs/maps/description_map.txt', 'a') as f:
             f.write(f"{keyword},{true_description}\n")
         
         root.destroy()
@@ -112,7 +117,7 @@ def replace_description(row):
 
     root.mainloop()
 
-    return description
+    return entered_description
 
 df['Description'] = df.apply(replace_description, axis=1)
 

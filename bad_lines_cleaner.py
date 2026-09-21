@@ -37,8 +37,10 @@ def center_window(window, width, height):
 def parse_filepath(filepath):
     """Parse the filepath to extract Type, Bank, and Card."""
     folder_name = Path(filepath).parent.name
-    type_, bank, card = folder_name.split('_')
-    return type_, bank, card
+    parts = folder_name.split('_')
+    if len(parts) != 3:
+        return "", "", ""
+    return parts[0], parts[1], parts[2]
 
 def create_popup(root, line, next_line_callback, cancel_callback):
     """Create a pop-up window to display the bad line."""
@@ -47,6 +49,7 @@ def create_popup(root, line, next_line_callback, cancel_callback):
     center_window(popup, width=800, height=600)  # Center the window on the screen
 
     # Parse the line into two lines with the second line starting with '['
+    part1 = line
     if ': [' in line:
         part1, part2 = line.split(': [', 1)
         part2 = '[' + part2  # Add the '[' back to the second part
@@ -140,7 +143,7 @@ def create_popup(root, line, next_line_callback, cancel_callback):
                 input_data.append("")
 
         # Write the input data to dirty.csv as a comma-separated list
-        with open('Data/dirty.csv', 'a', newline='') as file:
+        with open('data/dirty.csv', 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow(input_data)
 
@@ -161,15 +164,18 @@ def create_popup(root, line, next_line_callback, cancel_callback):
     cancel_button = tk.Button(button_frame, text="Cancel", command=on_cancel)
     cancel_button.pack(side='left', padx=10)
 
+# Read the bad lines, if the merger logged any
+bad_lines_path = Path('data/bad_lines.txt')
+bad_lines = read_bad_lines(bad_lines_path) if bad_lines_path.exists() else []
+
+if not bad_lines:
+    raise SystemExit
+
 # Initialize main window
 root = TkinterDnD.Tk()
 root.withdraw()  # Hide the root window
 root.title("Bad Lines Cleaner")
 center_window(root, width=400, height=300)  # Center the window on the screen
-
-# Read bad lines and create pop-up windows
-bad_lines_path = Path('Data/bad_lines.txt')
-bad_lines = read_bad_lines(bad_lines_path)
 
 def show_next_line(index=0):
     """Display the next bad line in a pop-up window."""

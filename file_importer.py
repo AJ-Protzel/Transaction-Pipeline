@@ -29,8 +29,8 @@ import os
 import shutil
 import json
 
-# Load configuration from Configs/config.json
-config_path = os.path.join(os.path.dirname(__file__), 'Configs', 'config.json')
+# Load configuration from configs/config.json
+config_path = os.path.join(os.path.dirname(__file__), 'configs', 'config.json')
 with open(config_path, 'r') as f:
     config = json.load(f)
 
@@ -81,7 +81,7 @@ def copy_file(file):
     card_selection = card_var.get()
     
     # Construct the folder path relative to the current program location
-    base_path = os.path.join(os.path.dirname(__file__), "Data")
+    base_path = os.path.join(os.path.dirname(__file__), "data")
     folder_path = os.path.join(base_path, f"{type_selection}_{bank_selection}_{card_selection}")
     
     # Create the folder if it doesn't exist
@@ -182,8 +182,8 @@ card_var = tk.StringVar()
 card_menu = create_dropdown("Card:", card_var, [], root)
 
 # Bind update functions to type and bank dropdown changes
-type_var.trace('w', update_bank_options)
-bank_var.trace('w', update_card_options)
+type_var.trace_add('write', update_bank_options)
+bank_var.trace_add('write', update_card_options)
 
 # Drag and drop area
 drop_area = tk.Label(root, text="Drag and drop files here", width=60, height=15, bg="lightgray")

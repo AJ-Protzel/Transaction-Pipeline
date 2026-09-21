@@ -31,8 +31,8 @@ def csv_to_json(csv_file_path, json_file_path):
     os.remove(csv_file_path)
 
 # Specify the file paths
-csv_file_path = 'Data/clean.csv'
-json_file_path = 'Data/clean.json'
+csv_file_path = 'data/clean.csv'
+json_file_path = 'data/clean.json'
 
 # Convert the CSV to JSON and remove the old CSV file
 csv_to_json(csv_file_path, json_file_path)

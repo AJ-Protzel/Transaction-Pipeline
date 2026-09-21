@@ -1,7 +1,7 @@
 """
 Author: Adrien Protzel
 
-This program processes files in specified directories created by file_importer.py and formats based on configurations provided in a config.json file. 
+This program processes files in specified directories created by file_importer.py and formats based on configurations provided in a config.json file.
 
 It removes or adds headers as needed, records bad lines, and merges like files.
 """
@@ -107,10 +107,10 @@ def main():
     Main function to process files in specified directories based on configurations.
     """
     # Define the folder path
-    folder_path = Path('Data')
+    folder_path = Path('data')
 
     # Load the configuration file
-    config_path = Path('Configs/config.json')
+    config_path = Path('configs/config.json')
     config_data = load_config(config_path)
 
     # Create a dictionary to map folder names to their configurations
@@ -137,4 +137,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
