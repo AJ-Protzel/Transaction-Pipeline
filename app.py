@@ -30,6 +30,7 @@ except ImportError:  # the app still works, it just needs the Add files button
 BG = "#1b1e24"
 PANEL = "#242933"
 EDGE = "#333a47"
+HOVER = "#414b5c"
 TEXT = "#e6e8eb"
 MUTED = "#98a0ad"
 ACCENT = "#4c8bf5"
@@ -101,6 +102,14 @@ class Dashboard(BaseWindow):
         style.theme_use("clam")
         style.configure("TCombobox", fieldbackground=PANEL, background=PANEL,
                         foreground=TEXT, arrowcolor=TEXT, bordercolor=EDGE)
+        # A readonly combobox draws its text as a selection, so it needs its
+        # own colors or it comes out grey on grey.
+        style.map("TCombobox",
+                  fieldbackground=[("readonly", PANEL)],
+                  background=[("readonly", PANEL)],
+                  foreground=[("readonly", TEXT)],
+                  selectbackground=[("readonly", PANEL)],
+                  selectforeground=[("readonly", TEXT)])
         style.configure("Bar.Horizontal.TProgressbar", troughcolor=PANEL,
                         background=ACCENT, bordercolor=PANEL, lightcolor=ACCENT,
                         darkcolor=ACCENT)
@@ -138,8 +147,8 @@ class Dashboard(BaseWindow):
         """A flat button, accented when it is the obvious next thing to press."""
         return tk.Button(
             parent, text=text, command=command,
-            bg=ACCENT if primary else PANEL, fg="#ffffff" if primary else TEXT,
-            activebackground=ACCENT if primary else EDGE, activeforeground="#ffffff",
+            bg=ACCENT if primary else EDGE, fg="#ffffff" if primary else TEXT,
+            activebackground=ACCENT if primary else HOVER, activeforeground="#ffffff",
             font=HEAD_FONT if primary else BODY_FONT, relief="flat",
             padx=16, pady=8, cursor="hand2",
             width=width, disabledforeground=MUTED,
@@ -195,7 +204,8 @@ class Dashboard(BaseWindow):
         if not self.staged:
             tk.Label(self.staged_panel, text="No files staged yet.", bg=PANEL,
                      fg=MUTED, font=BODY_FONT).pack(pady=24)
-            self.run_button.config(state="disabled", bg=PANEL, fg=MUTED)
+            self.run_button.config(state="disabled", bg=PANEL, fg=MUTED,
+                               text="Clean")
             return
 
         self.run_button.config(state="normal", bg=ACCENT, fg="#ffffff",

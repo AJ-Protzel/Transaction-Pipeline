@@ -8,6 +8,21 @@ columns, preamble rows, date formats, and disagreement about whether spending
 is a positive or a negative number. This reconciles them, names the merchants,
 categorizes them, and remembers every answer so it only ever asks once.
 
+## Screens
+
+Stage files against the account they came from:
+
+![The import view, with the account dropdown and drop zone](screenshots/import.png)
+
+Name anything the maps did not recognize, once, with the transaction in front
+of you:
+
+![The review view, asking about an unknown merchant](screenshots/review.png)
+
+Then the totals and where the output went:
+
+![The summary view, with totals by category](screenshots/summary.png)
+
 ## Try it
 
 ```bash
