@@ -1,0 +1,47 @@
+[
+    {
+        "type": "Credit",
+        "bank": "AlphaBank",
+        "card": "Rewards",
+        "skip_rows": 0,
+        "columns": ["Date", "Amount", "*", "*", "Description"],
+        "date_format": "%m/%d/%Y",
+        "amount_sign": -1
+    },
+    {
+        "type": "Credit",
+        "bank": "AlphaBank",
+        "card": "Cashback",
+        "skip_rows": 1,
+        "columns": ["Date", "*", "Description", "*", "Amount"],
+        "date_format": "%m/%d/%Y",
+        "amount_sign": 1
+    },
+    {
+        "type": "Credit",
+        "bank": "BetaBank",
+        "card": "Everyday",
+        "skip_rows": 1,
+        "columns": ["Date", "*", "Description", "*", "*", "Amount", "*"],
+        "date_format": "%Y-%m-%d",
+        "amount_sign": 1
+    },
+    {
+        "type": "Credit",
+        "bank": "BetaBank",
+        "card": "Travel",
+        "skip_rows": 1,
+        "columns": ["Date", "*", "Description", "*", "*", "Amount", "*"],
+        "date_format": "%Y-%m-%d",
+        "amount_sign": 1
+    },
+    {
+        "type": "Debit",
+        "bank": "AlphaBank",
+        "card": "Checking",
+        "skip_rows": 7,
+        "columns": ["Date", "Description", "Amount", "*"],
+        "date_format": "%m/%d/%Y",
+        "amount_sign": 1
+    }
+]

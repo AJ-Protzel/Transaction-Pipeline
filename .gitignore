@@ -1,3 +1,5 @@
+transactions.csv
+skipped_rows.csv
 data/
 __pycache__/
 *.pyc

@@ -1,104 +1,120 @@
 # Transaction Pipeline
 
-A Python-based transaction import and cleanup pipeline for bank and card statement files.
+Turns raw bank and credit card statement exports into one clean, categorized
+CSV, through a single window that stays open from the drop zone to the totals.
 
-## Overview
+Every bank exports a different shape of file: different column orders, junk
+columns, preamble rows, date formats, and disagreement about whether spending
+is a positive or a negative number. This reconciles them, names the merchants,
+categorizes them, and remembers every answer so it only ever asks once.
 
-This repository provides an end-to-end pipeline for importing transaction files, normalizing headers, cleaning data, categorizing descriptions, and converting between CSV and JSON.
-
-The main orchestration script is `main.py`, which runs the import, merge, clean, and file conversion steps in sequence.
-
-## Repository Structure
-
-- `main.py` - Runs the full processing pipeline in order.
-- `file_importer.py` - GUI file organizer to drag-and-drop files into `data/<Type>_<Bank>_<Card>` folders.
-- `file_merger.py` - Processes imported files, removes unwanted rows, merges like files, and adds headers.
-- `file_cleaner.py` - Cleans merged CSVs, normalizes columns, adds metadata, removes bad rows, and invokes the downstream cleaners.
-- `bad_lines_cleaner.py` - GUI tool to review and correct bad CSV rows manually.
-- `desc_cleaner.py` - Maps transaction descriptions to normalized descriptions.
-- `cat_cleaner.py` - Maps transactions to categories and produces `data/clean.csv`.
-- `csv_to_json.py` - Converts `data/clean.csv` to `data/clean.json`.
-- `json_to_csv.py` - Converts `data/clean.json` back to `data/clean.csv`.
-- `configs/config.json` - Configuration rules for imported file folders, header mapping, and row removal.
-- `configs/maps/description_map.txt` - Description keyword mapping file.
-- `configs/maps/category_map.txt` - Category keyword mapping file.
-
-## Requirements
-
-- Python 3.x
-- `pandas`
-- `tkinter` (usually included with Python)
-- `tkinterdnd2`
-
-Install dependencies with pip:
+## Try it
 
 ```bash
-pip install pandas tkinterdnd2
+python app.py
 ```
 
-## Usage
+Press **Load samples** and then **Clean 5 files**. Five statements in five
+different export formats are bundled in `sample_statements/`, so the app has
+something to chew on without any statements of your own.
 
-1. Place transaction files into the application by running:
-   ```bash
-   python file_importer.py
-   ```
-2. Use the GUI to select `Type`, `Bank`, and `Card`, then drag and drop files into the app.
-3. Run the pipeline from `main.py`:
-   ```bash
-   python main.py
-   ```
+Three of the sample merchants are deliberately missing from the maps, so the
+review step has something to ask about. Answer them and they are never asked
+again.
 
-This will execute the following steps:
+## How it works
 
-1. `file_importer.py` - organizes imported files into `data/<Type>_<Bank>_<Card>` folders.
-2. `file_merger.py` - removes header rows, merges files by folder, and writes a cleaned CSV.
-3. `file_cleaner.py` - normalizes CSVs, adds metadata columns, removes bad lines, and runs description and category cleaning.
-4. `csv_to_json.py` - converts `data/clean.csv` into `data/clean.json`.
-5. `json_to_csv.py` - converts `data/clean.json` back into `data/clean.csv`.
+1. **Stage** - pick an account, then drag statements onto the window or use
+   **Add files**. Each file is tagged with the account it came from.
+2. **Clean** - every file is read with its own account's rules: skip this many
+   preamble rows, these columns in this order, this date format, and flip the
+   sign if the bank records spending as a positive number. A row the pipeline
+   cannot read is set aside and reported, never guessed at.
+3. **Review** - anything the maps could not name comes up one at a time, with
+   the date, amount and account for context. You choose the substring to match
+   on, so one answer covers every store number that merchant will ever use.
+4. **Summary** - totals by category, and the path to the output.
 
-## Configuration
+Card payments and transfers between your own accounts are dropped, because
+they are bookkeeping rather than spending.
 
-The `configs/config.json` file defines processing rules for each file source. Each entry includes:
+## Files
 
-- `type` - e.g. `Credit` or `Debit`
-- `bank` - bank name
-- `card` - card or account name
-- `remove_rows` - number of top rows to drop from imported files
-- `add_header` - header row to insert after merging
+| File | What it holds |
+| --- | --- |
+| `app.py` | The dashboard. One window, four views, no other UI anywhere. |
+| `pipeline.py` | All the data work. No tkinter, so it is importable and testable. |
+| `accounts.json` | One entry per account: column layout, date format, amount sign. |
+| `merchants.csv` | `keyword,merchant` - matched as a substring, longest keyword first. |
+| `categories.csv` | `merchant,category` - every merchant name maps to one category. |
+| `sample_statements/` | One sample export per account, named after it. |
+| `test_pipeline.py` | Tests, run against those samples. |
 
-Example entry:
+Output lands in `transactions.csv`, with any unreadable rows in
+`skipped_rows.csv`. Both are gitignored.
+
+## Adding an account
+
+Add an entry to `accounts.json`. No code changes:
 
 ```json
 {
-  "type": "Credit",
-  "bank": "BetaBank",
-  "card": "Everyday",
-  "remove_rows": 1,
-  "add_header": ["Date", "*", "Description", "*", "*", "Amount", "*"]
+    "type": "Credit",
+    "bank": "BetaBank",
+    "card": "Everyday",
+    "skip_rows": 1,
+    "columns": ["Date", "*", "Description", "*", "*", "Amount", "*"],
+    "date_format": "%Y-%m-%d",
+    "amount_sign": 1
 }
 ```
 
-## Mapping Files
+- `skip_rows` - preamble rows above the data.
+- `columns` - the file's columns in order. `*` means throw this one away.
+  Only `Date`, `Description` and `Amount` are used.
+- `date_format` - a `strptime` format string.
+- `amount_sign` - `1` if the file already records spending as negative, `-1`
+  if it records it as positive.
 
-- `configs/maps/description_map.txt` is used by `desc_cleaner.py` to normalize raw transaction descriptions.
-- `configs/maps/category_map.txt` is used by `cat_cleaner.py` to assign categories such as `grocery`, `dining`, `travel`, `transfer`, and `cash`.
+`type`, `bank` and `card` must not contain underscores; they are joined with
+underscores to make the account's identifier.
 
-If a description or category is not found, the pipeline opens a manual GUI prompt to add a mapping.
+## Categories
 
-## Output
+`groceries`, `dining`, `gas`, `shopping`, `travel`, `utilities`,
+`subscriptions`, `cash`, `transfer`, `misc`.
 
-- `data/dirty.csv` - intermediate merged and cleaned data
-- `data/clean.csv` - final cleaned transactions with categories
-- `data/clean.json` - JSON version of the final cleaned data
+The list lives in `pipeline.CATEGORIES` and nowhere else. The dashboard builds
+its buttons from it and the tests assert that nothing in `categories.csv`
+falls outside it, so the two cannot drift apart.
+
+## Requirements
+
+Python 3.10 or newer. Nothing else is required: the pipeline uses only the
+standard library, and tkinter ships with Python.
+
+Drag and drop needs one optional package. Without it the app runs fine and the
+drop zone tells you to use **Add files** instead.
+
+```bash
+pip install tkinterdnd2
+```
+
+## Tests
+
+```bash
+python -m unittest
+```
+
+26 tests covering amount and date parsing across all five export formats,
+preamble and header handling, unreadable rows, longest-keyword matching,
+transfer dropping, and the output file's shape.
 
 ## Notes
 
-- The pipeline currently uses manual GUI prompts for unmapped descriptions and categories.
-- Future improvements may include:
-  - refactoring into reusable functions
-  - consolidating all GUI steps into a single persistent window
-  - automating category mapping for more transaction types
+The maps that ship here hold national chains and generic banking keywords only.
+They are seed data, not anyone's spending history.
 
-## License
-
-This repository does not include an explicit license. Add one as needed.
+Files are read, never moved or deleted. Everything runs on the main thread,
+which is fine for statement-sized files and keeps the window honest about what
+it is doing.
