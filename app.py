@@ -174,19 +174,13 @@ class Dashboard(BaseWindow):
         self._button(chooser, "Add files", self.browse_files).pack(side="left", padx=8)
         self._button(chooser, "Load samples", self.load_samples).pack(side="left")
 
-        hint = ("Drop statement files below" if DRAG_AND_DROP
-                else "tkinterdnd2 is not installed, so use Add files")
-        drop = tk.Label(self.body, text=hint + "\n\nEach file is tagged with the "
-                        "account selected above.", bg=PANEL, fg=MUTED,
-                        font=BODY_FONT, height=6, highlightbackground=EDGE,
-                        highlightthickness=1)
-        drop.pack(fill="x", pady=14)
-        if DRAG_AND_DROP:
-            drop.drop_target_register(DND_FILES)
-            drop.dnd_bind("<<Drop>>", self.on_drop)
-
+        # The list of staged files is itself the drop target, so there is one
+        # box on this view rather than an empty one above a full one.
         self.staged_panel = self._panel(self.body)
-        self.staged_panel.pack(fill="both", expand=True)
+        self.staged_panel.pack(fill="both", expand=True, pady=(14, 0))
+        if DRAG_AND_DROP:
+            self.staged_panel.drop_target_register(DND_FILES)
+            self.staged_panel.dnd_bind("<<Drop>>", self.on_drop)
 
         footer = tk.Frame(self.body, bg=BG)
         footer.pack(fill="x", pady=(14, 0))
@@ -202,25 +196,38 @@ class Dashboard(BaseWindow):
             child.destroy()
 
         if not self.staged:
-            tk.Label(self.staged_panel, text="No files staged yet.", bg=PANEL,
-                     fg=MUTED, font=BODY_FONT).pack(pady=24)
+            empty = tk.Frame(self.staged_panel, bg=PANEL)
+            empty.pack(expand=True)
+            headline = ("Drop statement files here" if DRAG_AND_DROP
+                        else "Add statement files with the button above")
+            tk.Label(empty, text=headline, bg=PANEL, fg=TEXT,
+                     font=HEAD_FONT).pack()
+            tk.Label(empty, text="Each file is tagged with the account selected "
+                     "above.\nNo statements of your own? Press Load samples.",
+                     bg=PANEL, fg=MUTED, font=BODY_FONT,
+                     justify="center").pack(pady=8)
             self.run_button.config(state="disabled", bg=PANEL, fg=MUTED,
-                               text="Clean")
+                                   text="Clean")
             return
 
         self.run_button.config(state="normal", bg=ACCENT, fg="#ffffff",
                                text=f"Clean {len(self.staged)} file"
                                     f"{'s' if len(self.staged) > 1 else ''}")
+        header = tk.Frame(self.staged_panel, bg=PANEL)
+        header.pack(fill="x", padx=16, pady=(14, 6))
+        tk.Label(header, text="Staged", bg=PANEL, fg=MUTED,
+                 font=SMALL_FONT).pack(side="left")
         for index, (path, account) in enumerate(self.staged):
             row = tk.Frame(self.staged_panel, bg=PANEL)
-            row.pack(fill="x", padx=14, pady=4)
+            row.pack(fill="x", padx=16, pady=3)
             tk.Label(row, text=path.name, bg=PANEL, fg=TEXT, font=BODY_FONT,
-                     anchor="w").pack(side="left")
+                     anchor="w", width=34).pack(side="left")
             tk.Label(row, text=account.label, bg=PANEL, fg=MUTED,
-                     font=SMALL_FONT).pack(side="left", padx=10)
+                     font=SMALL_FONT, anchor="w").pack(side="left", padx=10)
             tk.Button(row, text="remove", command=lambda i=index: self.unstage(i),
                       bg=PANEL, fg=MUTED, relief="flat", font=SMALL_FONT,
-                      activebackground=PANEL, cursor="hand2").pack(side="right")
+                      activebackground=PANEL, activeforeground=TEXT,
+                      cursor="hand2").pack(side="right")
 
     def selected_account(self):
         """The account currently chosen in the dropdown."""
@@ -382,6 +389,10 @@ class Dashboard(BaseWindow):
             button = self._button(buttons, category.title(),
                                   lambda c=category: self.answer(c))
             button.grid(row=index // 5, column=index % 5, padx=4, pady=4, sticky="ew")
+        # Without this the columns size to their widest label and the grid
+        # comes out ragged.
+        for column in range(5):
+            buttons.grid_columnconfigure(column, uniform="category")
 
         footer = tk.Frame(panel, bg=PANEL)
         footer.pack(anchor="w", padx=20, pady=18)
@@ -454,11 +465,20 @@ class Dashboard(BaseWindow):
         totals = pipeline.summarize(kept)
         table = tk.Frame(panel, bg=PANEL)
         table.pack(anchor="w", padx=20, pady=16)
+        row = 0
         for row, (category, total) in enumerate(totals.items()):
             tk.Label(table, text=category, bg=PANEL, fg=TEXT, font=BODY_FONT,
                      width=16, anchor="w").grid(row=row, column=0, pady=1)
             tk.Label(table, text=f"{total:,.2f}", bg=PANEL, fg=TEXT,
                      font=MONO_FONT, width=12, anchor="e").grid(row=row, column=1)
+
+        tk.Frame(table, bg=EDGE, height=1).grid(row=row + 1, column=0,
+                                                columnspan=2, sticky="ew", pady=6)
+        tk.Label(table, text="total", bg=PANEL, fg=MUTED, font=HEAD_FONT,
+                 width=16, anchor="w").grid(row=row + 2, column=0)
+        tk.Label(table, text=f"{sum(totals.values()):,.2f}", bg=PANEL, fg=TEXT,
+                 font=("Consolas", 11, "bold"), width=12,
+                 anchor="e").grid(row=row + 2, column=1)
 
         tk.Label(panel, text=str(output), bg=PANEL, fg=MUTED, font=SMALL_FONT,
                  wraplength=820, justify="left").pack(anchor="w", padx=20)
