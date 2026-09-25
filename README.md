@@ -10,9 +10,9 @@ categorizes them, and remembers every answer so it only ever asks once.
 
 ## Screens
 
-Stage files against the account they came from:
+Stage each file against the account it came from:
 
-![The import view, with the account dropdown and drop zone](screenshots/import.png)
+![The import view, with five sample statements staged](screenshots/import.png)
 
 Name anything the maps did not recognize, once, with the transaction in front
 of you:
