@@ -126,6 +126,28 @@ class MappingTests(unittest.TestCase):
         pipeline.name_merchants(transactions, merchants)
         self.assertEqual(transactions[0]["description"], "amazon prime")
 
+    def test_keywords_do_not_match_inside_a_longer_word(self):
+        merchants = {"fee": "fee", "ross": "ross", "ups": "ups",
+                     "apple": "apple store"}
+        descriptions = ["sunrise coffee house", "crossroads market 22",
+                        "backups inc", "pineapple express cafe"]
+        transactions = [self.transaction(d) for d in descriptions]
+        unknown = pipeline.name_merchants(transactions, merchants)
+        self.assertEqual(sorted(unknown), sorted(descriptions))
+
+    def test_keywords_still_match_a_trailing_store_number(self):
+        merchants = {"rei #": "rei", "ups": "ups", "amzn mktp": "amazon"}
+        transactions = [self.transaction(d) for d in
+                        ["rei #161 outdoors", "ups store 4412",
+                         "amzn mktp us*2m40k"]]
+        pipeline.name_merchants(transactions, merchants)
+        self.assertEqual([t["description"] for t in transactions],
+                         ["rei", "ups", "amazon"])
+
+    def test_keyword_matches_agrees_with_naming(self):
+        self.assertTrue(pipeline.keyword_matches("Costco", "costco whse #0812"))
+        self.assertFalse(pipeline.keyword_matches("fee", "the coffee bean"))
+
     def test_unknown_descriptions_are_grouped(self):
         transactions = [
             self.transaction("SUNRISE BAGEL CO 883"),

@@ -214,6 +214,25 @@ def make_transaction(date, description, amount, account):
     }
 
 
+def keyword_pattern(keyword):
+    """
+    Build the matcher for one keyword.
+
+    A plain substring test is too eager: "fee" would claim every coffee shop
+    and "ross" every crossroads. So a keyword has to start and end on a word
+    boundary -- but only at the ends that are themselves word characters, or a
+    keyword like "rei #" would stop matching the store number that follows it.
+    """
+    before = r"(?<!\w)" if re.match(r"\w", keyword[:1]) else ""
+    after = r"(?!\w)" if re.match(r"\w", keyword[-1:]) else ""
+    return re.compile(before + re.escape(keyword) + after)
+
+
+def keyword_matches(keyword, description):
+    """Whether a keyword would claim a description."""
+    return bool(keyword_pattern(keyword.strip().lower()).search(description))
+
+
 def name_merchants(transactions, merchants):
     """
     Replace raw descriptions with merchant names.
@@ -221,12 +240,19 @@ def name_merchants(transactions, merchants):
     Keywords are matched longest first, so "amazon prime" wins over "amazon"
     whatever order the mapping file happens to be in.
     """
-    keywords = sorted(merchants, key=len, reverse=True)
+    matchers = [
+        (keyword_pattern(keyword), merchants[keyword])
+        for keyword in sorted(merchants, key=len, reverse=True)
+    ]
     unknown = {}
     for transaction in transactions:
-        match = next((k for k in keywords if k in transaction["raw"]), None)
+        match = next(
+            (name for pattern, name in matchers
+             if pattern.search(transaction["raw"])),
+            None,
+        )
         if match:
-            transaction["description"] = merchants[match]
+            transaction["description"] = match
         else:
             transaction["description"] = transaction["raw"]
             unknown.setdefault(transaction["raw"], []).append(transaction)

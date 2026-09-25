@@ -377,8 +377,8 @@ class Dashboard(BaseWindow):
             self.name_entry.grid(row=1, column=1, padx=8, ipady=4)
             self.name_entry.insert(0, guess_keyword(subject))
 
-            tk.Label(panel, text="Matching is a substring test, so a short "
-                     "keyword catches every store number.", bg=PANEL, fg=MUTED,
+            tk.Label(panel, text="Keywords match on whole words, so a short one "
+                     "still catches every store number.", bg=PANEL, fg=MUTED,
                      font=SMALL_FONT).pack(anchor="w", padx=20, pady=(10, 0))
 
         tk.Label(panel, text="Category", bg=PANEL, fg=MUTED,
@@ -409,9 +409,9 @@ class Dashboard(BaseWindow):
             if not keyword or not name:
                 self.status.config(text="A keyword and a name are both needed.")
                 return
-            if keyword not in subject:
+            if not pipeline.keyword_matches(keyword, subject):
                 self.status.config(
-                    text=f"'{keyword}' does not appear in that description.")
+                    text=f"'{keyword}' would not match that description.")
                 return
             pipeline.append_map(pipeline.MERCHANTS_PATH, keyword, name)
             self.merchants[keyword] = name

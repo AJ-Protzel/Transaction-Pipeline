@@ -46,8 +46,10 @@ again.
    sign if the bank records spending as a positive number. A row the pipeline
    cannot read is set aside and reported, never guessed at.
 3. **Review** - anything the maps could not name comes up one at a time, with
-   the date, amount and account for context. You choose the substring to match
+   the date, amount and account for context. You choose the keyword to match
    on, so one answer covers every store number that merchant will ever use.
+   Keywords match on word boundaries, so `fee` does not claim every coffee
+   shop.
 4. **Summary** - totals by category, and the path to the output.
 
 Card payments and transfers between your own accounts are dropped, because
@@ -60,7 +62,7 @@ they are bookkeeping rather than spending.
 | `app.py` | The dashboard. One window, four views, no other UI anywhere. |
 | `pipeline.py` | All the data work. No tkinter, so it is importable and testable. |
 | `accounts.json` | One entry per account: column layout, date format, amount sign. |
-| `merchants.csv` | `keyword,merchant` - matched as a substring, longest keyword first. |
+| `merchants.csv` | `keyword,merchant` - matched on whole words, longest keyword first. |
 | `categories.csv` | `merchant,category` - every merchant name maps to one category. |
 | `sample_statements/` | One sample export per account, named after it. |
 | `test_pipeline.py` | Tests, run against those samples. |
@@ -121,9 +123,9 @@ pip install tkinterdnd2
 python -m unittest
 ```
 
-26 tests covering amount and date parsing across all five export formats,
-preamble and header handling, unreadable rows, longest-keyword matching,
-transfer dropping, and the output file's shape.
+29 tests covering amount and date parsing across all five export formats,
+preamble and header handling, unreadable rows, keyword matching, transfer
+dropping, and the output file's shape.
 
 ## Notes
 
