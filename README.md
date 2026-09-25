@@ -1,5 +1,7 @@
 # Transaction Pipeline
 
+[![tests](https://github.com/AJ-Protzel/Transaction-Pipeline/actions/workflows/tests.yml/badge.svg)](https://github.com/AJ-Protzel/Transaction-Pipeline/actions/workflows/tests.yml)
+
 Turns raw bank and credit card statement exports into one clean, categorized
 CSV, through a single window that stays open from the drop zone to the totals.
 
@@ -135,3 +137,7 @@ They are seed data, not anyone's spending history.
 Files are read, never moved or deleted. Everything runs on the main thread,
 which is fine for statement-sized files and keeps the window honest about what
 it is doing.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
